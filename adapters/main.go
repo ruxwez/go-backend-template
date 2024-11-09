@@ -5,6 +5,7 @@ import (
 	"log"
 
 	"api.ruxwez.dev/adapters/mysql"
+	"api.ruxwez.dev/adapters/mysql/models"
 	"api.ruxwez.dev/vars"
 	"gorm.io/gorm"
 )
@@ -23,7 +24,7 @@ func Init() {
 }
 
 func autoMigrate() {
-	err := MySQL.Set("gorm:table_options", "ENGINE=InnoDB").AutoMigrate()
+	err := MySQL.Set("gorm:table_options", "ENGINE=InnoDB").AutoMigrate(&models.Post{}, &models.Category{}, &models.User{}, &models.AuthToken{})
 	if err != nil {
 		log.Fatalln("Hubo un error al migrar la base de datos 'ruxwez' de MySQL")
 	}

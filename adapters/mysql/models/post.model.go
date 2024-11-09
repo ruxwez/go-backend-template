@@ -11,6 +11,9 @@ type Post struct {
 	Tumbnail    string `gorm:"notNull" json:"tumbnail"`
 
 	// Metadata
+	CategoryID uint     `gorm:"notNull" json:"-"`
+	Category   Category `gorm:"foreignKey:CategoryID" json:"category"`
+
 	Status     string `gorm:"notNull" json:"status"`
 	Updated_At int64  `gorm:"autoUpdateTime:milli" json:"update_at"`
 	Created_At int64  `gorm:"autoCreateTime" json:"create_at"`

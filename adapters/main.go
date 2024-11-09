@@ -18,14 +18,14 @@ func Init() {
 	log.Println("Abriendo conexión a los adaptadores")
 	defer autoMigrate()
 	// Inicializamos la base de datos MySQL principal
-	var dbDsnPrimary = fmt.Sprintf("%s/ruxwez", vars.MYSQL_DSN) // Formulamos la línea DSN correspondiente
+	var dbDsnPrimary = fmt.Sprintf("%s/database", vars.MYSQL_DSN) // Formulamos la línea DSN correspondiente
 	// Inicializamos una conexión de MySQL
 	MySQL = mysql.NewMySQLConnection(dbDsnPrimary)
 }
 
 func autoMigrate() {
-	err := MySQL.Set("gorm:table_options", "ENGINE=InnoDB").AutoMigrate(&models.Post{}, &models.Category{}, &models.User{}, &models.AuthToken{})
+	err := MySQL.Set("gorm:table_options", "ENGINE=InnoDB").AutoMigrate(&models.User{}, &models.AuthToken{})
 	if err != nil {
-		log.Fatalln("Hubo un error al migrar la base de datos 'ruxwez' de MySQL")
+		log.Fatalln("Hubo un error al migrar la base de datos 'database' de MySQL")
 	}
 }

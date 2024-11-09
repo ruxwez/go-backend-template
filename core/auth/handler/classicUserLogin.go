@@ -3,10 +3,11 @@ package authHandler
 import (
 	"strings"
 
-	sharedDomain "api.ruxwez.dev/core/_shared"
-	authApplication "api.ruxwez.dev/core/auth/application"
-	authDomain "api.ruxwez.dev/core/auth/domain"
-	emailLib "api.ruxwez.dev/libs/email"
+	sharedDomain "internal/core/_shared"
+	authApplication "internal/core/auth/application"
+	authDomain "internal/core/auth/domain"
+	emailLib "internal/libs/email"
+
 	"github.com/gofiber/fiber/v2"
 )
 

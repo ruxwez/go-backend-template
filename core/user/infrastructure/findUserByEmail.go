@@ -1,8 +1,8 @@
 package userInfrastructure
 
 import (
-	"api.ruxwez.dev/adapters"
-	"api.ruxwez.dev/adapters/mysql/models"
+	"internal/adapters"
+	"internal/adapters/mysql/models"
 )
 
 func FindUserByEmail(email string) *models.User {

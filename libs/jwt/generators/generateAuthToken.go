@@ -1,6 +1,6 @@
 package jwtLibGen
 
-import jwtLib "api.ruxwez.dev/libs/jwt"
+import jwtLib "internal/libs/jwt"
 
 func GenerateAuthToken(userID string) (string, error) {
 	// Instanciamos el map para añadir el user id al claims

@@ -4,9 +4,10 @@ import (
 	"fmt"
 	"log"
 
-	"api.ruxwez.dev/adapters/mysql"
-	"api.ruxwez.dev/adapters/mysql/models"
-	"api.ruxwez.dev/vars"
+	"internal/adapters/mysql"
+	"internal/adapters/mysql/models"
+	"internal/vars"
+
 	"gorm.io/gorm"
 )
 

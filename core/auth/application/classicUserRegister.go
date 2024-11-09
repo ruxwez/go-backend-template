@@ -1,13 +1,13 @@
 package authApplication
 
 import (
-	"api.ruxwez.dev/adapters/mysql/models"
-	sharedDomain "api.ruxwez.dev/core/_shared"
-	authDomain "api.ruxwez.dev/core/auth/domain"
-	authInfrastructure "api.ruxwez.dev/core/auth/infrastructure"
-	userDomain "api.ruxwez.dev/core/user/domain"
-	userInfrastructure "api.ruxwez.dev/core/user/infrastructure"
-	passwordLib "api.ruxwez.dev/libs/password"
+	"internal/adapters/mysql/models"
+	sharedDomain "internal/core/_shared"
+	authDomain "internal/core/auth/domain"
+	authInfrastructure "internal/core/auth/infrastructure"
+	userDomain "internal/core/user/domain"
+	userInfrastructure "internal/core/user/infrastructure"
+	passwordLib "internal/libs/password"
 )
 
 func ClassicUserRegister(http_body authDomain.ClassicRegisterBody) (string, error) {

@@ -1,7 +1,8 @@
 package auth
 
 import (
-	authHandler "api.ruxwez.dev/core/auth/handler"
+	authHandler "internal/core/auth/handler"
+
 	"github.com/gofiber/fiber/v2"
 )
 

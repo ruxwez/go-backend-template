@@ -3,9 +3,9 @@ package userInfrastructure
 import (
 	"log"
 
-	"api.ruxwez.dev/adapters"
-	"api.ruxwez.dev/adapters/mysql/models"
-	userDomain "api.ruxwez.dev/core/user/domain"
+	"internal/adapters"
+	"internal/adapters/mysql/models"
+	userDomain "internal/core/user/domain"
 )
 
 func CreateUser(user *models.User) error {

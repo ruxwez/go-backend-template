@@ -1,4 +1,4 @@
-module api.ruxwez.dev
+module internal
 
 go 1.23.1
 

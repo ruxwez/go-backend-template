@@ -3,8 +3,9 @@ package authMiddleware
 import (
 	"strings"
 
-	sharedDomain "api.ruxwez.dev/core/_shared"
-	authInfrastructure "api.ruxwez.dev/core/auth/infrastructure"
+	sharedDomain "internal/core/_shared"
+	authInfrastructure "internal/core/auth/infrastructure"
+
 	"github.com/gofiber/fiber/v2"
 )
 

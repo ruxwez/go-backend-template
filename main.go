@@ -3,10 +3,11 @@ package main
 import (
 	"log"
 
-	"api.ruxwez.dev/adapters"
-	"api.ruxwez.dev/middlewares"
-	"api.ruxwez.dev/routes"
-	"api.ruxwez.dev/vars"
+	"internal/adapters"
+	"internal/middlewares"
+	"internal/routes"
+	"internal/vars"
+
 	"github.com/gofiber/fiber/v2"
 
 	"github.com/joho/godotenv"

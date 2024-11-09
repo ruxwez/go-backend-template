@@ -3,9 +3,9 @@ package authInfrastructure
 import (
 	"fmt"
 
-	"api.ruxwez.dev/adapters"
-	"api.ruxwez.dev/adapters/mysql/models"
-	jwtLibGen "api.ruxwez.dev/libs/jwt/generators"
+	"internal/adapters"
+	"internal/adapters/mysql/models"
+	jwtLibGen "internal/libs/jwt/generators"
 )
 
 func CreateAndRegisterAuthToken(user_id uint) string {

@@ -3,9 +3,9 @@ package authInfrastructure
 import (
 	"strconv"
 
-	"api.ruxwez.dev/adapters"
-	"api.ruxwez.dev/adapters/mysql/models"
-	jwtLib "api.ruxwez.dev/libs/jwt"
+	"internal/adapters"
+	"internal/adapters/mysql/models"
+	jwtLib "internal/libs/jwt"
 )
 
 func CheckToken(token string) int {

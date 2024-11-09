@@ -1,7 +1,8 @@
 package routes
 
 import (
-	"api.ruxwez.dev/core/auth"
+	"internal/core/auth"
+
 	"github.com/gofiber/fiber/v2"
 )
 

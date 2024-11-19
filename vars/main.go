@@ -20,4 +20,6 @@ func Init() {
 	if SERVER_PORT == "" {
 		SERVER_PORT = "3000"
 	}
+
+	initSMTP()
 }

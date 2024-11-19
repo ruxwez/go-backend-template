@@ -17,5 +17,7 @@ func NewMySQLConnection(dsn string) *gorm.DB {
 		log.Fatalln(err)
 	}
 
+	log.Println("Conexión a MySQL establecida")
+
 	return db
 }
